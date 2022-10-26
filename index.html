@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Coffee store" />
     <meta name="keywords" content="shop coffee" />
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Craft coffee in New York</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="_container">
       <header class="header">
         <a class="header__link" href="./index.html">
-          <img class="header__logo" src="./images/logo.png" alt="Logo coffee shop" />
+          <img class="header__logo" src="./images/logo.png" alt="Logo coffee shop" width="64" />
         </a>
+        <div style="color: black" class="header__burger">Burger menu</div>
       </header>
 
-      <main>
-        <section class="banner">
-          <h1 class="banner__title title">Unique Craft Cafe in NYC</h1>
-          <p class="banner__text">
-            Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus
-            vestibulum sed arcu non. Dolor magna eget est lorem ipsum dolor sit amet consectetur.
-          </p>
-          <a class="banner__button button" href="#dishes">View menu</a>
+      <main class="page">
+        <section class="page__banner banner">
+          <div class="banner__wrap">
+            <h1 class="banner__title title">Unique Craft Cafe in NYC</h1>
+            <p class="banner__text">
+              Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus
+              vestibulum sed arcu non. Dolor magna eget est lorem ipsum dolor sit amet consectetur.
+            </p>
+            <a class="banner__button button" href="#dishes">View menu</a>
+          </div>
         </section>
 
-        <section class="coffee">
+        <section class="page__coffee coffee">
           <h2 class="coffee__title title">Coffee & Cakes</h2>
           <ul class="coffee__list">
             <li class="coffee__item">
@@ -73,7 +80,7 @@
 
         <div class="bg-products"></div>
 
-        <section class="products">
+        <section class="page__products products">
           <h2 class="visually-hidden">About our products</h2>
           <ul class="products__list">
             <li class="products__item">
@@ -111,7 +118,7 @@
           </ul>
         </section>
 
-        <section class="ice-cream">
+        <section class="page__ice-ctream ice-cream">
           <h2 class="visually-hidden">Ice-creame menu</h2>
           <ul class="ice-cream__list">
             <li class="ice-cream__item">
@@ -135,7 +142,7 @@
           </ul>
         </section>
 
-        <section class="dishes">
+        <section class="page__dishes dishes">
           <h2 class="dishes__title title">Popular Dishes</h2>
           <ul class="dishes__list">
             <li class="dishes__item">
@@ -213,7 +220,7 @@
           </ul>
         </section>
 
-        <section class="menu">
+        <section class="page__menu menu">
           <div class="menu__wrap">
             <h2 class="menu__title title">Vegetarian Menu</h2>
             <p class="menu__text">
@@ -253,7 +260,7 @@
           <button class="dessert__button button">View more</button>
         </section>
 
-        <section class="cafe">
+        <section class="page__cafe cafe">
           <div class="cafe__wrap">
             <h2 class="cafe__title title">Cafe in manhattan</h2>
             <p class="cafe__text">Coffee or tea specialty to choose</p>
