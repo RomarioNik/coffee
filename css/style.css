@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-._container {
+[class*='_container'] {
   max-width: 910px;
   padding: 0 30px;
   margin: 0 auto;
@@ -63,9 +63,14 @@ a {
 .page__banner {
 }
 .banner {
-  background-image: url();
+  display: flex;
+  align-items: center;
+  height: 688px;
+  background: url('../images/bg-barista.jpg') right/cover no-repeat;
 }
+
 .banner__wrap {
+  /* margin: 0; */
   max-width: 470px;
   padding: 20px 30px;
   border-radius: 20px;
@@ -94,43 +99,96 @@ a {
 
 .page__coffee {
 }
+
 .coffee {
   padding: 60px 0;
 }
+
 .coffee__title {
+  text-align: center;
   font-size: 60px;
   line-height: 1.1;
   color: var(--title-color);
+
+  margin-bottom: 30px;
 }
+
 .coffee__list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 30px;
+
+  text-align: center;
 }
+
+.about-product__item,
 .coffee__item {
+  max-width: 403px;
+  padding: 30px;
 }
+
+.coffee__item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .coffee__img {
 }
-.coffee__text {
-  margin-bottom: 20px;
+
+.coffee__text,
+.about-product__text {
+  margin: 30px 0;
   color: var(--title-color);
 }
-.coffee__text-wrap {
-  max-width: 403px;
+
+.coffee__text-wrap,
+.about-product__text-wrap {
   padding: 20px;
   border-radius: 20px;
   background-color: #bfa98b;
 }
-.coffee__text-bold {
+
+.coffee__text-bold,
+.about-product__text-bold {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
 }
+
 .coffee__text-simple {
 }
-.about-product__item {
-}
+
 .about-product__img {
 }
-.about-product__text {
-}
-.about-product__text-wrap {
-}
-.about-product__text-bold {
-}
+
 .about-product__text-simple {
+}
+
+/* bg-products */
+
+.bg-products {
+  min-height: 575px;
+  background: url('../images/bg-make-coffee.jpg') center/cover no-repeat;
+}
+
+/* section coffee */
+
+.page__products {
+}
+.products {
+}
+._container {
+}
+.visually-hidden {
+}
+.products__list {
+}
+.products__item {
+}
+.products__number {
+}
+.products__title-min {
+}
+.products__text {
 }
