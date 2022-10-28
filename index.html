@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <div class="_container"> -->
     <header class="header _container">
       <a class="header__link" href="./index.html">
         <img class="header__logo" src="./images/logo.png" alt="Logo coffee shop" width="64" />
@@ -534,23 +533,30 @@
         <div class="contacts__wrap">
           <h2 class="contacts__title title">Contact Us</h2>
           <form class="contacts__form" action="">
-            <input class="contacts__input" type="text" name="name" placeholder="Enter your name" />
+            <label class="contacts__label" for="name">Name</label>
             <input
-              class="contacts__input"
+              class="contacts__input input-common"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            />
+
+            <label class="contacts__label" for="email">Email</label>
+            <input
+              class="contacts__input input-common"
               type="email"
               name="email"
               placeholder="Enter a valid email address"
             />
-            <input
-              class="contacts__input-area"
-              type="textarea"
-              name="message"
-              placeholder="Message"
-            />
-            <label class="contacts__checkbox-area" for="term">
+
+            <label class="contacts__label" for="message">Message</label>
+            <textarea class="contacts__input-area input-common" name="message"></textarea>
+
+            <label class="contacts__label" for="term">
               <input class="contacts__checkbox" type="checkbox" name="term" id="term" />
               I accept the <a href="#">Terms of Service</a>
             </label>
+
             <button class="contacts__button button" type="submit">Submit</button>
           </form>
         </div>
@@ -558,8 +564,7 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__text">&copy; Sample text. Click to select the Text Element.</p>
+      <p class="footer__text">&copy; Coffee To Go!</p>
     </footer>
-    <!-- </div> -->
   </body>
 </html>
